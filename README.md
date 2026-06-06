@@ -27,6 +27,7 @@ To ensure this enterprise application is **production-ready**, the architecture 
 ┌──────────────────────────────────────┴─────────────────────────────────────┐
 ▼                                      ▼                                     ▼
 
+
 Serialize Image                     2. SageMaker Inference                3. Confidence Filter
 (Downloads & encodes S3 data)         (Invokes ML Endpoint)                 (Automated Guardrail)
 
@@ -34,6 +35,7 @@ Serialize Image                     2. SageMaker Inference                3. Con
                                 │
 ┌───────────────────────────────┴───────────────────────────────┐
 ▼                                                               ▼
+
 [Confidence ≥ 93%]                                              [Confidence < 93%]
 Automated Processing                                            Flag for Human Review
 

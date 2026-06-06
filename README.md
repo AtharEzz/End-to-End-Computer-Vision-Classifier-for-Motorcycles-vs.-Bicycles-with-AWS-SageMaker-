@@ -25,6 +25,7 @@ To ensure this enterprise application is **production-ready**, the architecture 
 
                                        │
 ┌──────────────────────────────────────┴─────────────────────────────────────┐
+
 ▼                                      ▼                                     ▼
 
 
@@ -34,6 +35,7 @@ Serialize Image                     2. SageMaker Inference                3. Con
 
                                 │
 ┌───────────────────────────────┴───────────────────────────────┐
+
 ▼                                                               ▼
 
 [Confidence ≥ 93%]                                              [Confidence < 93%]

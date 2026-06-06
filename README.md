@@ -20,14 +20,18 @@ To ensure this enterprise application is **production-ready**, the architecture 
 ---
 
 ## Architecture & Serverless Workflow
+
 [User/API Request] ➔ [API Gateway] ➔ [Step Functions Orchestration]
-│
+
+                                       │
 ┌──────────────────────────────────────┴─────────────────────────────────────┐
 ▼                                      ▼                                     ▼
 
 Serialize Image                     2. SageMaker Inference                3. Confidence Filter
 (Downloads & encodes S3 data)         (Invokes ML Endpoint)                 (Automated Guardrail)
-│
+
+
+                                │
 ┌───────────────────────────────┴───────────────────────────────┐
 ▼                                                               ▼
 [Confidence ≥ 93%]                                              [Confidence < 93%]

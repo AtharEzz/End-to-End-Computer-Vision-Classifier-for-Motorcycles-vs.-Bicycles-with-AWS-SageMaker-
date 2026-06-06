@@ -28,6 +28,8 @@ To achieve this, the project was executed across six core engineering stages:
                                                                         │
 [6. Resource Cleanup & Optimization] ⮘ [5. Advanced Drift Monitoring] ⮘ [4. Testing & Evaluation]
 
+
+
 1 Data Staging: Extracted target vehicle classes from the raw CIFAR-100 dataset, processed images into optimized formats, and staged them in structured Amazon S3 buckets.
 
 2 Model Training and Deployment: Leveraged AWS SageMaker to train a highly accurate image classifier using transfer learning on GPU compute, deploying it to an auto-scaling, production-grade endpoint with data capture enabled.

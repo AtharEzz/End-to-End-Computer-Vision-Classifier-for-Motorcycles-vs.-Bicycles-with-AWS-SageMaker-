@@ -5,6 +5,7 @@ Project Capstone: This production pipeline was developed as the comprehensive fi
 
 ## Business Case: Optimizing Fleet Operations for "Scones Unlimited"
 **The Problem**
+
 In high-volume food logistics, operational efficiency depends heavily on routing the right vehicle to the right order. For Scones Unlimited, a premium delivery-focused logistics company, delivery dispatch must be optimized based on transit types:
 
 Bicycles must be assigned to short-distance, dense urban orders to bypass traffic.
@@ -14,6 +15,7 @@ Motorcycles must be assigned to long-distance orders to maintain food freshness 
 Manually identifying vehicle types at the loading bays creates massive operational bottlenecks, delays delivery times, and increases human labor costs.
 
 **The Solution**
+
 As a Machine Learning Engineer, I designed and shipped a scalable, safe, and automated image classification pipeline that identifies whether an incoming delivery driver has a bicycle or a motorcycle. By integrating this intelligence into the company's operating environment, Scones Unlimited can automatically route drivers to the correct loading bays and dynamically assign orders on-demand.
 
 To ensure this enterprise application is production-ready, the architecture includes automated scaling to meet peak morning delivery demands and explicit MLOps safeguards to detect data drift or degraded model performance over time.

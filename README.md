@@ -24,6 +24,7 @@ To ensure this enterprise application is production-ready, the architecture incl
 To achieve this, the project was executed across six core engineering stages:
 
 [1. Data Staging] ➔ [2. Model Training & Deployment] ➔ [3. Serverless Lambda & Step Functions]
+
                                                                         │
 [6. Resource Cleanup & Optimization] ⮘ [5. Advanced Drift Monitoring] ⮘ [4. Testing & Evaluation]
 
